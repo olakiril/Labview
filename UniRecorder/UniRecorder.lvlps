@@ -1,0 +1,43 @@
+[ProjectWindow_Data]
+ProjectExplorer.ClassicPosition[String] = "97,454,688,784"
+
+[AB_Cache_{E98B32F3-727B-4AAB-8B76-576626D21E38}]
+Cache_ProjSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_MyCompChksum[String] = "f46250748bb1579803e26f195e40a382"
+Cache_GenFile_Count[Integer] = 4
+Cache_GenFile[0][Path] Line0001 = "/Z/users/Manolis/Labview/UniRecorder/builts/"
+Cache_GenFile[0][Path] Line0002 = "Unirec.exe"
+Cache_GenFile[1][Path] Line0001 = "/Z/users/Manolis/Labview/UniRecorder/builts/"
+Cache_GenFile[1][Path] Line0002 = "Unirec.aliases"
+Cache_GenFile[2][Path] Line0001 = "/Z/users/Manolis/Labview/UniRecorder/builts/"
+Cache_GenFile[2][Path] Line0002 = "Unirec.ini"
+Cache_GenFile[3][Path] Line0001 = "/Z/users/Manolis/Labview/UniRecorder/builts/"
+Cache_GenFile[3][Path] Line0002 = "data/lvanlys.dll"
+Cache_GenGUID_Count[Integer] = 4
+Cache_GenGUID[0][String] = "{73BC68E9-3DD1-447D-B168-78E5357CBF23}"
+Cache_GenGUID[1][String] = "{51BB6084-5DFE-4FA0-A2EC-E72BEE027CBD}"
+Cache_GenGUID[2][String] = "{7EA3121B-1617-490A-A0DE-7C3F861CB298}"
+Cache_GenGUID[3][String] = ""
+Cache_OutputDir[Path] = "/Z/users/Manolis/Labview/UniRecorder/builts"
+
+[AB_Cache_{85876437-D350-4725-9E35-1A624B5AAA6B}]
+Cache_ProjSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_MyCompChksum[String] = "f46250748bb1579803e26f195e40a382"
+Cache_GenFile_Count[Integer] = 4
+Cache_GenFile[0][Path] Line0001 = "/Z/users/Manolis/Labview/UniRecorder/builts/"
+Cache_GenFile[0][Path] Line0002 = "Unirec.exe"
+Cache_GenFile[1][Path] Line0001 = "/Z/users/Manolis/Labview/UniRecorder/builts/"
+Cache_GenFile[1][Path] Line0002 = "Unirec.aliases"
+Cache_GenFile[2][Path] Line0001 = "/Z/users/Manolis/Labview/UniRecorder/builts/"
+Cache_GenFile[2][Path] Line0002 = "Unirec.ini"
+Cache_GenFile[3][Path] Line0001 = "/Z/users/Manolis/Labview/UniRecorder/builts/"
+Cache_GenFile[3][Path] Line0002 = "data/lvanlys.dll"
+Cache_GenGUID_Count[Integer] = 4
+Cache_GenGUID[0][String] = "{73BC68E9-3DD1-447D-B168-78E5357CBF23}"
+Cache_GenGUID[1][String] = "{51BB6084-5DFE-4FA0-A2EC-E72BEE027CBD}"
+Cache_GenGUID[2][String] = "{7EA3121B-1617-490A-A0DE-7C3F861CB298}"
+Cache_GenGUID[3][String] = ""
+Cache_OutputDir[Path] = "/Z/users/Manolis/Labview/UniRecorder/builts"
+
