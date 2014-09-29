@@ -1,0 +1,128 @@
+CameraFile (6.60) {
+   Manufacturer (PhotonFocus)
+   Model (MV1-D1312-160-CL)
+   CreationDate (20120601183625)
+   InterfaceInfo (1435) {
+      AcquisitionWindow (0, 0, 1312, 1082)
+      BinaryThreshold (0, 200)
+      BitDepth (12)
+      BitsPerComponent (12)
+      NumComponents (1)
+      NumPhantomComponents (0)
+      Unsigned16BitImage (Yes)
+      FrameTimeout (1000)
+      LUT (Normal)
+      LUTTransform (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+      MaxImageSize (1312, 1082)
+      ScanType (Area)
+      Scaling (1)
+      DetectPCLK (Yes)
+      EnablePoCL (No)
+      FastRearm (No)
+      SynchronizeEnables (No)
+      ConfigDelay (0)
+      Interlaced (No)
+      Serial {
+         Baud (9600)
+         SerialDisabled (No)
+         Databits (8)
+         Parity (N)
+         DTR (High)
+         RTS (High)
+         Stopbits (1)
+         TermChars ()
+      }
+      SignalLevels {
+         PGOutput (RS422)
+      }
+      ControlLinesSource {
+         UseDefaultSource (Yes)
+         CCSourceLine0 (None, 0)
+         CCSourceLine1 (None, 1)
+         CCSourceLine2 (None, 2)
+         CCSourceLine3 (None, 3)
+      }
+      TestImageType (None)
+      TestImageFrameBlanking (100)
+      TestImageLineBlanking (100)
+      NumCameraTaps (2)
+      NumCameraXZones (1)
+      NumCameraTapsPerXZone (2)
+      NumCameraYZones (1)
+      NumCameraTapsPerYZone (1)
+      TenTapBitMapping (Normal)
+      TimeSlots (1)
+      XZonePixelExtractor (Left)
+      YZonePixelExtractor (Top)
+      NeedYChip (No)
+      NeedZChip (No)
+      LVALHighTrue (Yes)
+      FVALHighTrue (Yes)
+      DVALHighTrue (Yes)
+      DVALMode (1)
+      AcquisitionBitstream (Class08.dat)
+      AcquisitionBitstreamCompressed (Yes)
+      Tap (0) {
+         Position (Normal)
+         Start (Left, Top)
+      }
+   }
+   Pattern {
+      Action (PG) {
+         Line (0) {
+            Start (Low)
+         }
+         Line (1) {
+            Start (Low)
+         }
+         Line (2) {
+            Start (Low)
+         }
+         Line (3) {
+            Start (Low)
+         }
+         Clock (0x78)
+      }
+   }
+   Attribute (ExposureTime) {
+      Value (Integer) {
+         Min (1)
+         Max (20949)
+         Increment (50)
+         Display {
+            Multiplier (0.020002)
+            Offset (-0.009002)
+            Precision (3)
+            Units (milliseconds)
+         }
+         Default (10000)
+         Current (10000)
+      }
+   }
+   Attribute (Resolution) {
+      Value (List) {
+         Name (12 Bit) {
+         }
+         Name (10 Bit) {
+         }
+         Name (8 Bit) {
+         }
+         Default (12 Bit)
+         Current (12 Bit)
+      }
+   }
+   Attribute (Digital Gain) {
+      Value (List) {
+         Name (1x) {
+         }
+         Name (2x) {
+         }
+         Name (4x) {
+         }
+         Name (8x) {
+         }
+         Default (1x)
+         Current (8x)
+      }
+   }
+}
