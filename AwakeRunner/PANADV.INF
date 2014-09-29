@@ -1,0 +1,46 @@
+[version] 
+signature="$CHICAGO$" 
+Class = MEDIA 
+
+[DefaultInstall] 
+CopyFiles = Util.Files.Sys 
+AddReg = Util.Add.Reg.Sys 
+UpdateInis= AddSysIniEntry 
+
+[DefaultUnInstall] 
+DelFiles = Util.Files.Sys 
+DelReg = Util.Del.Reg.Sys 
+UpdateInis= DelSysIniEntry 
+
+[DestinationDirs] 
+Util.Files.Sys = 11
+
+[SourceDisksNames] 
+1="PANA",,1 
+
+[SourceDisksFiles] 
+pdvcodec.dll=1 
+
+
+[Util.Files.Sys] 
+pdvcodec.dll 
+panadv.inf
+
+[Util.Add.Reg.Sys] 
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\vidc.dvsd,Description,,%*PANA.DeviceDesc% 
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\vidc.dvsd,Driver,,pdvcodec.dll 
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\vidc.dvsd,FriendlyName,,%*PANA.DeviceDesc% 
+
+[Util.Del.Reg.Sys] 
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\vidc.dvsd,Description 
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\vidc.dvsd,Driver 
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\vidc.dvsd,FriendlyName 
+
+[AddSysIniEntry] 
+system.ini, drivers32,,"vidc.dvsd=pdvcodec.dll",0 
+
+[DelSysIniEntry] 
+system.ini, drivers32,,"vidc.dvsd=pdvcodec.dll",0 
+
+[Strings] 
+*PANA.DeviceDesc="PANA" 
