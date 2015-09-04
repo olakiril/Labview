@@ -1,0 +1,35 @@
+[Test Parameters]
+
+bgColor=127,127,127
+
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=10
+
+dotColor=0,255
+
+passive=1
+acquireFixation=1
+allowSaccades=0
+
+monitorSize=41,30
+monitorDistance=100
+monitorCenter=800,600
+monitorType=CRT
+
+rewardProb=1
+randReward=0
+nTrials=1500
+joystickThreshold= 250
+
+pFill=0
+stimFrames=3
+
+stimCenterX=860
+stimCenterY=660
+
+dotSize=7
+
+dotNumX=22
+dotNumY=18
+

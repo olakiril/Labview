@@ -1,0 +1,37 @@
+[Test Parameters]
+
+bgColor=64,64,64
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=10
+
+passive=1
+acquireFixation=1
+allowSaccades=0
+
+monitorSize=41,30
+monitorDistance=100
+monitorCenter=800,600
+monitorType = CRT
+
+barColor=255,255,255
+barSize=20,180
+dx=5,10,15,15,15,20,25,25,25,25,25,30,30,30,40,40,60,60,60
+trajOffsets = 0,0,0,-5,5,0,0,-5,5,-10,10,0,-10,10,0,20,0,20,40
+stimCenter=956,669
+
+trajectoryLength=460
+trajectoryAngle=0
+numFlashLocs=11
+flashLocDistance=20
+verticalDistance=150
+direction=0,1
+maxStimulusTime=1800
+interStimulusTime=300
+postStimulusTime=300
+flashStop=0
+flashInit=0
+combined=0
+arrangement=0
+
+rewardProb=1

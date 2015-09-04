@@ -1,0 +1,43 @@
+[Test Parameters]
+
+setup = 3;
+
+bgColor=127.5,127.5,127.5
+
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=10
+fixAcquireTime=0
+fixHoldTime=300
+
+allowSaccades=0
+joystickThreshold=0
+
+monitorSize=41,30
+monitorDistance=107
+monitorCenter=800,600
+
+passive=0
+acquireFixation=1
+rewardProb=1
+
+location=0,-100
+centerOrientation=90
+diskSize=120
+contrast=100
+spatialFreq=0.05
+randPhase=1
+
+stepSize=1
+stepCorrect=0
+stepWrong=0
+initialThreshold=5.4919
+maxLevel = 10
+distribution="@(x) x"
+poolSize=10
+
+targetDistance=400
+targetAngle=45
+targetColor=255,255,255
+targetSize=50
+targetRadius=100

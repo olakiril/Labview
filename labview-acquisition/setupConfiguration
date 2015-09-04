@@ -1,0 +1,9 @@
+[Main]
+Setup = 3
+baseDirectory = m:\
+[SessionDatabase]
+dsn = c:\ATLab.dsn
+username = timestamper
+password = 0815
+[TrialBasedExperimentRunner]
+experimentPath = c:\Labview\Trial Based Experiment Statechart\

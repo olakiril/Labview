@@ -1,0 +1,2 @@
+-1100 timestamper channel not set
+-1101 failed to initialize the connection to session database

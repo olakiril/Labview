@@ -1,0 +1,24 @@
+﻿Build started 11/12/2014 12:49:16 PM.
+     1>Project "C:\HDF5Tools\HDF5Tools\HDF5Tools.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\HDF5Tools.unsuccessfulbuild".
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\HDF5Tools\Release\HDF5Tools.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\HDF Group\HDF5\1.8.9\lib" hdf5dll.lib szip.lib szip.lib /MANIFEST /ManifestFile:"Release\HDF5Tools.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\HDF5Tools\Release\HDF5Tools.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 /DLL Release\HDF5Tools.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+            Creating library C:\HDF5Tools\Release\HDF5Tools.lib and object C:\HDF5Tools\Release\HDF5Tools.exp
+         HDF5Tools.vcxproj -> C:\HDF5Tools\Release\HDF5Tools.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\HDF5Tools\Release\HDF5Tools.dll;#2" /manifest Release\HDF5Tools.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\HDF5Tools.unsuccessfulbuild".
+         Touching "Release\HDF5Tools.lastbuildstate".
+     1>Done Building Project "C:\HDF5Tools\HDF5Tools\HDF5Tools.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.12

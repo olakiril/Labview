@@ -1,0 +1,34 @@
+[Test Parameters]
+
+bgColor=64,64,64
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=1
+
+passive=1
+acquireFixation=0
+allowSaccades=0
+rewardProb=1
+
+monitorSize=43,27.09
+monitorDistance=28
+monitorCenter=840,525
+
+stimulusTime=1000
+postStimulusTime=500
+
+location=0,0
+clipLength=10
+movieName=mov
+moviePath= /Users/atlab/Desktop/Movies/
+movieNumber=11,7
+movieStat=1,2
+	
+magnification=-1
+
+
+Intertrial = 500
+AcquireFixation = 0
+HoldFixation = 0
+DelayPeriod = 10000
+ResponsePeriod = 0

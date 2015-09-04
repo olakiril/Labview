@@ -1,0 +1,14 @@
+[Test Parameters]
+bgColor=127.5,127.5,127.5
+
+passive=0
+allowSaccades=0
+acquireFixation=1
+eyeResponse=1
+
+monitorSize=41,30
+monitorDistance=107
+monitorCenter=800,600
+
+fixSpotSize=7
+fixSpotColor=255,255,255

@@ -1,0 +1,2 @@
+obj1_default0004.png,obj1_scaled75-0004.png,obj1_scaled75-0003.png,obj1_scaled50-0004.png,obj1_scaled75-0005.png,obj1_scaled75-0002.png,obj2_default0002.png,obj2_scaled75-0002.png,obj2_scaled75-0003.png,obj2_scaled50-0002.png,obj2_scaled75-0004.png,obj2_scaled75-0001.png
+obj1_default0004.png,obj1_scaled75-0004.png,obj1_scaled75-0003.png,obj1_scaled50-0004.png,obj1_scaled75-0005.png,obj1_scaled75-0002.png

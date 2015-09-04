@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+This file describes custom errors for the acquisition system.
+</nicomment>
+<nierror code="-8000">
+timestamper channel not set
+</nierror>
+<nierror code="-8001">
+Failed to initialize the connection to session database
+</nierror>
+<nierror code="-8002">
+Starting experiment failed on matlab side
+</nierror>
+<nierror code="-8003">
+Recording path in config file not valid
+</nierror>
+<nierror code="-8004">
+Experiment path in config file not found
+</nierror>
+</nierror>
+<nierror code="-8005">
+Reading config file before setting in
+</nierror>
+<nierror code="-8006">
+Subject not defined in SQL table.  Please have someone add it.
+</nierror>
+<nierror code="-8007">
+Unable to connect to the session database
+</nierror>
+<nierror code="-8008">
+Unable to create file.  File name should end in %d.h5.
+</nierror>
+<nierror code="-8009">
+Unable to create file.  File name should end in %d.h5.
+</nierror>
+
+</nidocument> 

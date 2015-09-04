@@ -1,0 +1,39 @@
+[Test Parameters]
+bgColor=128,128,128
+
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=0
+
+dotColor=0,255
+
+passive=1
+acquireFixation=0
+allowSaccades=0
+
+monitorSize=64,40
+monitorDistance=30
+monitorCenter=1024,640
+
+location=0,0
+
+rewardProb=1
+nTrials=500
+
+randReward=0
+
+joystickThreshold= 250
+
+pFill=0
+stimFrames=15
+
+stimCenterX= 1024
+stimCenterY= 640
+
+dotSize= 120
+
+dotNumX= 17
+dotNumY= 10
+
+Intertrial=1000
+DelayPeriod=30000

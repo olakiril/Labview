@@ -1,0 +1,66 @@
+[Test Parameters]
+
+bgColor = 127.5, 127.5, 127.5
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=10
+fixAcquireTime=0
+fixHoldTime=300
+
+allowSaccades=0
+joystickThreshold=0
+
+monitorSize=41,30
+monitorDistance=100
+monitorCenter=800,600
+
+passive=0
+acquireFixation=1
+rewardProb=1
+
+stimulusLocation = 0,-100
+diskSize = 120
+
+stimFrames = 1
+orientations = 0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130,135,140,145,150,155,160,165,170,175
+
+oriBlockSize = 2
+phases = 0, 45, 90, 135, 180, 225, 270, 315
+signals = 45,135
+centerOrientation = 270
+randSeedNum = 10
+fixedSeedNum = 0
+
+stepCorrect = 0
+stepWrong = 0
+stepSize = 1
+initialThreshold = 1000
+distribution = '@(x) x'
+poolSize = 10
+maxLevel = 5
+
+contrast = 1
+spatialFreq = 3.5
+color = 1, 1, 1
+
+stimulusTime = 1000
+postStimulusTime = 0
+
+
+targetDistance=400
+targetAngle=135
+targetColor=255,255,255
+targetSize=50
+targetRadius=100
+
+nSeeds=5
+biases=50,50
+coherences=45
+nRepsPerBlock=1
+nCatchPerBlock=1
+subBlockSize=1
+isMask=1
+
+phase=0
+waitTime=0
+spatialFreq=0.4

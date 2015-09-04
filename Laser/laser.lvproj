@@ -1,8 +1,9 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="13008000">
+<Project Type="Project" LVVersion="14008000">
 	<Property Name="varPersistentID:{4E5ED30E-890C-419D-80CF-415F50805876}" Type="Ref">/My Computer/Laser Library.lvlib/Lens</Property>
 	<Property Name="varPersistentID:{6AEE0434-EEE7-492D-A06A-0C75ABA80DC4}" Type="Ref">/My Computer/Laser Library.lvlib/Possition</Property>
 	<Property Name="varPersistentID:{75F59540-AB01-4093-8F7E-EA13D27E6A4B}" Type="Ref">/My Computer/Laser Library.lvlib/Remote WV</Property>
+	<Property Name="varPersistentID:{7C9AC7DB-F60B-44CA-9938-611E4222FFF6}" Type="Ref">/My Computer/Laser Library.lvlib/IsGalvo</Property>
 	<Property Name="varPersistentID:{A8425D16-F457-4BE3-815D-17611B5272DA}" Type="Ref">/My Computer/Laser Library.lvlib/WV</Property>
 	<Property Name="varPersistentID:{C61C193B-A338-4CED-AEB8-FB8B181583B9}" Type="Ref">/My Computer/Laser Library.lvlib/GDD</Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -163,7 +164,6 @@
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
-				<Item Name="General Error Handler CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler CORE.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
@@ -201,6 +201,8 @@
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="Nearest Freq in Int Cycles.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalConfig.llb/Nearest Freq in Int Cycles.vi"/>
 				<Item Name="Nearest Frequency for Block.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalConfig.llb/Nearest Frequency for Block.vi"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 			</Item>
 			<Item Name="create unique folder.vi" Type="VI" URL="../create unique folder.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
@@ -279,7 +281,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{9949DF37-03C4-4F46-8BE6-73E26026BB29}</Property>
-				<Property Name="Bld_version.build" Type="Int">17</Property>
+				<Property Name="Bld_version.build" Type="Int">19</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LaserMaster.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../NI_AB_PROJECTNAME/Application/LaserMaster.exe</Property>

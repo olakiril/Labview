@@ -1,0 +1,24 @@
+[Test Parameters]
+
+bgColor=0,0,0
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=1
+
+passive=1
+acquireFixation=0
+allowSaccades=0
+rewardProb=1
+
+monitorSize=43,27.09
+monitorDistance=30
+
+postStimulusTime=500
+
+barWidth=2
+speed=0.16
+trajectoryAngle=90
+
+
+
+

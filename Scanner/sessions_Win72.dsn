@@ -1,0 +1,5 @@
+[ODBC]
+DRIVER=MySQL ODBC 5.2 Unicode Driver
+UID=manolis
+DATABASE=vis2p_manolis
+SERVER={at-database.neusc.bcm.tmc.edu}

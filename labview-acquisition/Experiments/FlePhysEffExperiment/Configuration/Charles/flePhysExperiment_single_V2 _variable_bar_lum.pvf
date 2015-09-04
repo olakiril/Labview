@@ -1,0 +1,36 @@
+[Test Parameters]
+
+bgColor=0,0,0
+fixSpotColor=255,0,0
+fixSpotLocation=0,0
+fixSpotSize=10
+
+passive=1
+acquireFixation=1
+allowSaccades=0
+
+monitorSize=41,30
+monitorDistance=100
+monitorCenter=800,600
+monitorType = LCD
+
+barColor=64,64,64
+barSize=10,180
+dx=10
+trajOffsets = 0
+stimCenter=958,655
+trajectoryLength=1210
+trajectoryAngle=0
+numFlashLocs=3
+flashLocDistance=10
+verticalDistance=150
+direction=0,1
+maxStimulusTime=1800
+interStimulusTime=300
+postStimulusTime=300
+flashStop=0
+flashInit=0
+combined=0
+arrangement=0
+
+rewardProb=1

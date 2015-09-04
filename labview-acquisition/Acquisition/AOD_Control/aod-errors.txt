@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+This file describes custom errors for my AOD scanning. 
+</nicomment>
+<nierror code="-103">
+IO module not correct or FPGA never initialized
+</nierror>
+<nierror code="-102">
+Serial error from FPGA.  Scanning more quickly that serial settings allow.
+</nierror>
+<nierror code="-104">
+Bad PMT data.  PMT data timed out when streaming to FPGA.
+</nierror>
+<nierror code="-105">
+Out of range.  Coordinates specified exceed allowable frequency settings.
+</nierror>
+<nierror code="-101">
+FPGA failed to arm when starting task.
+</nierror>
+</nidocument>
