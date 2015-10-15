@@ -18,6 +18,8 @@
 			<Item Name="permutate.vi" Type="VI" URL="../permutate.vi"/>
 			<Item Name="cluster2array.vi" Type="VI" URL="../cluster2array.vi"/>
 			<Item Name="getPulseDuration.vi" Type="VI" URL="../getPulseDuration.vi"/>
+			<Item Name="mailError.vi" Type="VI" URL="../mailError.vi"/>
+			<Item Name="UpdateLiquidVolume.vi" Type="VI" URL="../UpdateLiquidVolume.vi"/>
 		</Item>
 		<Item Name="Controls" Type="Folder">
 			<Item Name="ParamsArray.ctl" Type="VI" URL="../ParamsArray.ctl"/>
@@ -32,8 +34,9 @@
 		<Item Name="Juicer.lvclass" Type="LVClass" URL="../Juicer.lvclass"/>
 		<Item Name="Acquisition.lvclass" Type="LVClass" URL="../Acquisition.lvclass"/>
 		<Item Name="state.lvsc" Type="LVStatechart" URL="../state.lvsc"/>
-		<Item Name="ConditioningState.html" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2014/www/ConditioningState.html"/>
 		<Item Name="calibrator.ico" Type="Document" URL="../calibrator.ico"/>
+		<Item Name="ConditioningState-Case.vi" Type="VI" URL="../ConditioningState-Case.vi"/>
+		<Item Name="conditioning.lvproj_My Computer_ConditioningState.html" Type="Document" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2014/www/conditioning.lvproj_My Computer_ConditioningState.html"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -298,9 +301,6 @@
 				<Item Name="Image Unit" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Unit"/>
 				<Item Name="IMAQ GetImageInfo" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageInfo"/>
 				<Item Name="IMAQ ReadFile" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ ReadFile"/>
-				<Item Name="NI_SC_LVSCCommonFiles.lvlib" Type="Library" URL="/&lt;vilib&gt;/Statechart/Common/NI_SC_LVSCCommonFiles.lvlib"/>
-				<Item Name="SCRT SDV Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT SDV Rtn.vi"/>
-				<Item Name="SCRT Dbg Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT Dbg Rtn.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
 				<Item Name="Write To Spreadsheet File (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (I64).vi"/>
@@ -318,6 +318,18 @@
 				<Item Name="Read From Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read From Spreadsheet File.vi"/>
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
 				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
+				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
+				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
+				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
+				<Item Name="Semaphore Refnum Core.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore Refnum Core.ctl"/>
+				<Item Name="Semaphore RefNum" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore RefNum"/>
+				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
+				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
+				<Item Name="Not A Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Not A Semaphore.vi"/>
+				<Item Name="Release Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore.vi"/>
+				<Item Name="NI_SC_LVSCCommonFiles.lvlib" Type="Library" URL="/&lt;vilib&gt;/Statechart/Common/NI_SC_LVSCCommonFiles.lvlib"/>
+				<Item Name="SCRT SDV Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT SDV Rtn.vi"/>
+				<Item Name="SCRT Dbg Rtn.vi" Type="VI" URL="/&lt;vilib&gt;/Statechart/Infrastructure/RTStatechart/Dbg/SCRT Dbg Rtn.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
@@ -327,6 +339,10 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="StateCase.vi" Type="VI" URL="../StateCase.vi"/>
+			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
@@ -346,8 +362,8 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{059FCFE8-C89A-4054-A1CF-EC5E8F694ED4}</Property>
-				<Property Name="Bld_version.build" Type="Int">24</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">BehavioralTraining.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Behavioral Training.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -358,7 +374,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Database.lvclass/conditioning.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{071DEFCD-BCA9-43C1-81D5-5E783ECF566C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{03AC5751-F651-4B68-ACA9-93C8718A34B8}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ConditioningState.vi</Property>
@@ -368,7 +384,7 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/ConditioningState.html</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/conditioning.lvproj_My Computer_ConditioningState.html</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Behavioral Training</Property>
@@ -423,6 +439,60 @@
 				<Property Name="TgtF_productName" Type="Str">CalibrationSaver</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{7F793CB0-F357-4D2B-BF1A-624963C85172}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">CalibrationSaver.exe</Property>
+			</Item>
+			<Item Name="Behavioral Training - Case" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{F83833C8-D466-44CB-93F9-C0C341156DA6}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{4BDD64F8-13E5-4A2E-BA80-0FA839FD890C}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{D9B44CD5-EAFB-43DF-8912-57359FF04053}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Behavioral Training - Case</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{43456B82-EBC6-4D26-AEDE-D772DA165FDD}</Property>
+				<Property Name="Bld_version.build" Type="Int">34</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">BehavioralTrainingCase.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/Behavioral Training - Case.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Database.lvclass/conditioning.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6677BD15-DCB7-4453-A454-0141E3EA2158}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ConditioningState.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/ConditioningState-Case.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Functions</Property>
+				<Property Name="Source[3].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Behavioral Training</Property>
+				<Property Name="TgtF_internalName" Type="Str">Behavioral Training</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 </Property>
+				<Property Name="TgtF_productName" Type="Str">Behavioral Training</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{5EE43A91-ADA0-43E0-B72B-A8E6C19A50BB}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">BehavioralTrainingCase.exe</Property>
 			</Item>
 		</Item>
 	</Item>
