@@ -1,0 +1,19 @@
+﻿Build started 5/7/2015 1:57:56 PM.
+     1>Project "C:\HDF5Tools32\HDF5Tools\HDF5Tools.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\HDF_Group\HDF5\1.8.14\include" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /GL /D _CRT_SECURE_NO_WARNINGS /D _HDF5USEDLL_ /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /analyze- /errorReport:prompt HDF5Tools.cpp /clr:nostdlib 
+         HDF5Tools.cpp
+     1>c:\program files (x86)\hdf_group\hdf5\1.8.14\include\H5api_adpt.h(30): warning C4005: '_HDF5USEDLL_' : macro redefinition
+                 command-line arguments :  see previous definition of '_HDF5USEDLL_'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\HDF5Tools32\Release\HDF5Tools.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\HDF_Group\HDF5\1.8.14\lib" hdf5.lib szip.lib /MANIFEST /ManifestFile:"Release\HDF5Tools.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\HDF5Tools32\Release\HDF5Tools.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Release\HDF5Tools.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+            Creating library C:\HDF5Tools32\Release\HDF5Tools.lib and object C:\HDF5Tools32\Release\HDF5Tools.exp
+         HDF5Tools.vcxproj -> C:\HDF5Tools32\Release\HDF5Tools.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\HDF5Tools32\Release\HDF5Tools.dll;#2" /manifest Release\HDF5Tools.dll.intermediate.manifest
+     1>Done Building Project "C:\HDF5Tools32\HDF5Tools\HDF5Tools.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.59

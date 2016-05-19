@@ -1,0 +1,8 @@
+[ODBC]
+DRIVER=MySQL ODBC 5.1 Driver
+UID=timestamper
+SERVER=at-database.neusc.bcm.tmc.edu
+PORT=0
+OPTION=0
+DATABASE=vis2p_manolis
+

@@ -1,0 +1,7 @@
+[ODBC]
+DRIVER=MySQL ODBC 5.3 Unicode Driver
+UID=timestamper
+SERVER=at-database.ad.bcm.edu
+PORT=3306
+OPTION=0
+DATABASE=vis2p_manolis

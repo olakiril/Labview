@@ -1,0 +1,8 @@
+[ODBC]
+DRIVER=MySQL ODBC 5.3 Unicode Driver
+UID=timestamper
+SERVER=at-database.ad.bcm.edu
+PORT=0
+OPTION=0
+DATABASE=manolis_behavior
+

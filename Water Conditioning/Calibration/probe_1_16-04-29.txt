@@ -1,0 +1,2 @@
+pulse_dur(msec)	100	200	300	400	500
+microL/pulse	NaN	NaN	NaN	NaN	NaN

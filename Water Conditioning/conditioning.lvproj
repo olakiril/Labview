@@ -362,7 +362,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{059FCFE8-C89A-4054-A1CF-EC5E8F694ED4}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">9</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">BehavioralTraining.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Behavioral Training.exe</Property>
