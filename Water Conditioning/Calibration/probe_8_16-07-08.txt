@@ -1,0 +1,2 @@
+pulse_dur(msec)	     35	     45	     55	     70	     80
+microL/pulse	4.76	11.22	11.29	16.33	18.43

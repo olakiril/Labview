@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="14008000">
+<Project Type="Project" LVVersion="16008000">
 	<Property Name="varPersistentID:{13C32B0F-20EE-4A49-8AF3-61C3EFB74F3C}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/EphysAIscalingCoeff</Property>
 	<Property Name="varPersistentID:{1FDEF3EF-DBF8-4871-B8C5-316053B4DB04}" Type="Ref">/My Computer/Laser Library.lvlib/IsGalvo</Property>
 	<Property Name="varPersistentID:{2158BA8B-A1F1-4DE8-8DDE-27BF290756AF}" Type="Ref">/My Computer/AcquisitionVariables.lvlib/Task</Property>
@@ -58,13 +58,16 @@
 			</Item>
 			<Item Name="behavior.ico" Type="Document" URL="../private/behavior.ico"/>
 			<Item Name="find.vi" Type="VI" URL="../private/find.vi"/>
+			<Item Name="diskdriveinfo.vi" Type="VI" URL="../private/diskdriveinfo.vi"/>
+			<Item Name="setClusterElement.vi" Type="VI" URL="../private/setClusterElement.vi"/>
+			<Item Name="getClusterElement.vi" Type="VI" URL="../private/getClusterElement.vi"/>
 		</Item>
-		<Item Name="Behavior.vi" Type="VI" URL="../Behavior.vi"/>
-		<Item Name="Importer.vi" Type="VI" URL="../Importer.vi"/>
+		<Item Name="CajalMaster.vi" Type="VI" URL="../CajalMaster.vi"/>
 		<Item Name="Imaging.lvclass" Type="LVClass" URL="../Imaging/Imaging.lvclass"/>
 		<Item Name="Photodiode.lvclass" Type="LVClass" URL="../Photodiode/Photodiode.lvclass"/>
 		<Item Name="QuadraturePositionDecoder.lvclass" Type="LVClass" URL="../QuadraturePositionDecoder/QuadraturePositionDecoder.lvclass"/>
 		<Item Name="Database.lvclass" Type="LVClass" URL="../Database/Database.lvclass"/>
+		<Item Name="Experiment.lvclass" Type="LVClass" URL="../Experiment/Experiment.lvclass"/>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../private/AcquisitionVariables.lvlib"/>
 		<Item Name="SutterShared.lvlib" Type="Library" URL="../private/SutterShared.lvlib"/>
 		<Item Name="Laser Library.lvlib" Type="Library" URL="../private/Laser Library.lvlib"/>
@@ -265,6 +268,14 @@
 				<Item Name="GOOP Object Repository Method.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository Method.ctl"/>
 				<Item Name="GOOP Object Repository.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/_goopsup.llb/GOOP Object Repository.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+				<Item Name="DAQmx Create Channel (CI-Duty Cycle).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (CI-Duty Cycle).vi"/>
+				<Item Name="DAQmx Create Channel (CI-Velocity-Angular).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (CI-Velocity-Angular).vi"/>
+				<Item Name="DAQmx Create Channel (CI-Velocity-Linear).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (CI-Velocity-Linear).vi"/>
+				<Item Name="DAQmx Read (Counter 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 1D DBL NChan 1Samp).vi"/>
+				<Item Name="DAQmx Read (Counter 1D U32 NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 1D U32 NChan 1Samp).vi"/>
+				<Item Name="DAQmx Read (Counter 2D DBL NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 2D DBL NChan NSamp).vi"/>
+				<Item Name="DAQmx Read (Counter 2D U32 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 2D U32 NChan NSamp).vi"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
 			<Item Name="Append To Dataset 1D Double.vi" Type="VI" URL="../private/HDF5Tools32/LabView/Append To Dataset 1D Double.vi"/>
 			<Item Name="Append To Dataset 1D Integer.vi" Type="VI" URL="../private/HDF5Tools32/LabView/Append To Dataset 1D Integer.vi"/>
@@ -286,10 +297,10 @@
 			<Item Name="SessionPrimary.ctl" Type="VI" URL="../private/Database/SessionPrimary.ctl"/>
 			<Item Name="StimulationPrimary.ctl" Type="VI" URL="../private/Database/StimulationPrimary.ctl"/>
 			<Item Name="WaveformArrayTo2DArray.vi" Type="VI" URL="../private/WaveformArrayTo2DArray.vi"/>
-			<Item Name="ParamsTuple.ctl" Type="VI" URL="../../Water Conditioning/ParamsTuple.ctl"/>
+			<Item Name="kernel32.dll" Type="Document" URL="/C/Windows/System32/kernel32.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Behavior" Type="EXE">
+			<Item Name="Cajal Master" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{454186A5-FEED-41F9-954F-E451C1CB5DA6}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{A68924B2-F0BB-4B58-941E-17AC103ECEEB}</Property>
@@ -297,7 +308,7 @@
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{19D416C0-A5C7-4723-B76C-72FFC8635800}</Property>
 				<Property Name="Bld_buildSpecDescription" Type="Str">first build</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Behavior</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Cajal Master</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -305,10 +316,10 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F23129C5-1F3F-4C8D-9A34-1EA9AF922B26}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Behavior.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/Behavior.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">CajalMaster.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/CajalMaster.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -317,10 +328,10 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Supporting files/behavior.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CD95BD08-725A-4D39-A8C6-DC5AA7D4EB52}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C49A0C6B-4418-401E-94D8-D4CCF9230617}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Behavior.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CajalMaster.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
@@ -357,12 +368,12 @@
 				<Property Name="Source[4].propertiesCount" Type="Int">6</Property>
 				<Property Name="Source[4].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">5</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Behavior</Property>
-				<Property Name="TgtF_internalName" Type="Str">Behavior</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Cajal Master</Property>
+				<Property Name="TgtF_internalName" Type="Str">Cajal Master</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2016 </Property>
-				<Property Name="TgtF_productName" Type="Str">Behavior</Property>
+				<Property Name="TgtF_productName" Type="Str">Cajal Master</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{08F756C5-ED11-48D6-8A4B-5ED33CE65705}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Behavior.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">CajalMaster.exe</Property>
 			</Item>
 		</Item>
 	</Item>
