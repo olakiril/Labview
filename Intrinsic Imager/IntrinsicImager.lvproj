@@ -242,7 +242,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{65079915-90C9-453B-AAC4-3441C9AC0719}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Imager.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Imager.exe</Property>
@@ -254,7 +254,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/OptImage.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{8EA0E6D0-DA42-4E5B-842F-77EA93E306FA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0000C789-A3C8-4FCF-B447-90A7ACAA9F1B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Intrinsic Imager.vi</Property>

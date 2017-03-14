@@ -68,6 +68,7 @@
 		<Item Name="QuadraturePositionDecoder.lvclass" Type="LVClass" URL="../QuadraturePositionDecoder/QuadraturePositionDecoder.lvclass"/>
 		<Item Name="Database.lvclass" Type="LVClass" URL="../Database/Database.lvclass"/>
 		<Item Name="Experiment.lvclass" Type="LVClass" URL="../Experiment/Experiment.lvclass"/>
+		<Item Name="Behavior.lvclass" Type="LVClass" URL="../../Cajal/Behavior/Behavior.lvclass"/>
 		<Item Name="AcquisitionVariables.lvlib" Type="Library" URL="../private/AcquisitionVariables.lvlib"/>
 		<Item Name="SutterShared.lvlib" Type="Library" URL="../private/SutterShared.lvlib"/>
 		<Item Name="Laser Library.lvlib" Type="Library" URL="../private/Laser Library.lvlib"/>
